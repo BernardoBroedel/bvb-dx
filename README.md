@@ -12,6 +12,28 @@ npx BernardoBroedel/bvb-dx
 
 Isso inicializará a interface interativa, que te guiará através das configurações do ambiente.
 
+### 🎨 Prévia da Interface
+
+Quando você rodar o comando, a experiência visual no terminal será similar a esta:
+
+```text
+  ____ __     __ ____        ____ __  __ 
+ | __ )\ \   / /| __ )      |  _ \\ \/ / 
+ |  _ \ \ \ / / |  _ \ _____| | | |\  /  
+ | |_) | \ V /  | |_) |_____| |_| |/  \  
+ |____/   \_/   |____/      |____//_/\_\ 
+
+             Configurando a Experiência de Desenvolvedor
+
+│
+◇  Initializing BVB-DX Workspace... 
+│
+◇  Qual contexto base você deseja aplicar neste projeto?
+│  ✦ Configuração Completa (Recomendado)
+│  ↳ Cursor Rules
+│  ↳ Antigravity Skills
+```
+
 ## ✨ Recursos
 
 - **Interface Rica e Interativa:** Utiliza prompts modernos (via `@clack/prompts`) e ASCII Art para uma experiência visual impecável no terminal.
