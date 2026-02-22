@@ -1,0 +1,6 @@
+# Cursor Rules Pattern
+
+## Regras Globais
+- Sempre priorizar código limpo (Clean Code).
+- Utilizar TypeScript strict.
+- Criar componentes usando funções puras sempre que aplicável.
