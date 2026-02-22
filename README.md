@@ -7,7 +7,7 @@ Uma ferramenta de CLI para padronizar o contexto de IA e configurações de proj
 Você pode rodar a CLI diretamente via `npx` (sem precisar instalar globalmente) em qualquer projeto:
 
 ```bash
-npx bvb-dx
+npx BernardoBroedel/bvb-dx
 ```
 
 Isso inicializará a interface interativa, que te guiará através das configurações do ambiente.
@@ -25,19 +25,19 @@ Se você preferir pular os menus interativos, pode usar os argumentos diretament
 
 | Argumento            | Atalho | Descrição | Exemplo de Uso |
 | :------------------- | :----- | :-------- | :------------- |
-| `--env <type>`       | `-e`   | Define qual ambiente injetar (`all`, `cursor` ou `antigravity`). | `npx bvb-dx --env cursor` |
-| `--path <dir>`       | `-p`   | Define o diretório de destino onde os arquivos serão aplicados. O padrão é o diretório atual (`.`). | `npx bvb-dx -p ./meu-projeto` |
-| `--yes`              | `-y`   | Modo silencioso: aceita todas as opções e pula as perguntas. Requer `--env`. | `npx bvb-dx -y -e antigravity -p .` |
+| `--env <type>`       | `-e`   | Define qual ambiente injetar (`all`, `cursor` ou `antigravity`). | `npx BernardoBroedel/bvb-dx --env cursor` |
+| `--path <dir>`       | `-p`   | Define o diretório de destino onde os arquivos serão aplicados. O padrão é o diretório atual (`.`). | `npx BernardoBroedel/bvb-dx -p ./meu-projeto` |
+| `--yes`              | `-y`   | Modo silencioso: aceita todas as opções e pula as perguntas. Requer `--env`. | `npx BernardoBroedel/bvb-dx -y -e antigravity -p .` |
 
 ### Exemplos Práticos
 
 1. **Configuração completa em uma nova pasta `backend`:**
    ```bash
-   npx bvb-dx -p ./backend
+   npx BernardoBroedel/bvb-dx -p ./backend
    ```
 2. **Injetar apenas as regras do Cursor, ignorando os prompts interativos:**
    ```bash
-   npx bvb-dx --env cursor --yes
+   npx BernardoBroedel/bvb-dx --env cursor --yes
    ```
 
 ## 📂 Estrutura de Templates Separados
@@ -52,3 +52,9 @@ Você pode customizar o "Ouro" editando estas subpastas dentro do repositório d
 - **`templates/antigravity/`**
   - **O que faz:** Injeta a estrutura de pasta `.rules/` (ex: `ai-context-skill.md`).
   - **Para que serve:** Adiciona as **Skills Especializadas** da equipe, ditando as regras de arquitetura a serem lidas e respeitadas pelo agente de IA.
+
+## 🚧 Roadmap (Próximos Passos)
+
+Em breve, este pacote contará com suporte avançado a automações:
+- **GitHub Actions (CI/CD):** Workflows visando a publicação automatizada sem a necessidade de build manual (packages).
+- **GitHub Releases:** Changelog inteligente do versionamento atrelado de cada release do nosso CLI.

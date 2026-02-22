@@ -1,34 +1,35 @@
 {
-  "name": "bvb-dx",
-  "version": "1.0.0",
-  "description": "BVB-DX CLI - Ferramenta para padronização de contexto de IA e projetos",
-  "main": "dist/index.js",
-  "bin": {
-    "bvb-dx": "./dist/index.js"
-  },
-  "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
-    "start": "node dist/index.js"
-  },
-  "keywords": [
-    "cli",
-    "bvb-dx",
-    "dx",
-    "developer-experience"
-  ],
-  "author": "BernardoBroedel",
-  "license": "MIT",
-  "dependencies": {
-    "@clack/prompts": "^0.7.0",
-    "commander": "^12.0.0",
-    "fs-extra": "^11.2.0",
-    "picocolors": "^1.0.0"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.11.0",
-    "tsup": "^8.0.2",
-    "typescript": "^5.3.3"
-  }
+    "name": "bvb-dx",
+    "version": "1.0.0",
+    "description": "BVB-DX CLI - Ferramenta para padronização de contexto de IA e projetos",
+    "main": "dist/index.js",
+    "bin": {
+        "bvb-dx": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "start": "node dist/index.js",
+        "prepare": "npm run build"
+    },
+    "keywords": [
+        "cli",
+        "bvb-dx",
+        "dx",
+        "developer-experience"
+    ],
+    "author": "BernardoBroedel",
+    "license": "MIT",
+    "dependencies": {
+        "@clack/prompts": "^0.7.0",
+        "commander": "^12.0.0",
+        "fs-extra": "^11.2.0",
+        "picocolors": "^1.0.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^20.11.0",
+        "tsup": "^8.0.2",
+        "typescript": "^5.3.3"
+    }
 }
